@@ -1,4 +1,4 @@
-use LittleLemonDB;
+use db_capstone_project;
 select c.customerID, concat(c.first_name,' ',c.last_name) as FullName, o.OrderID, o.totalCost, m.Name, mi.CourseName, mi.StarterName 
 from customers as c inner join orders as o on c.customerID=o.customerID 
 inner join Menus as m on o.MenuID=m.MenuID 
